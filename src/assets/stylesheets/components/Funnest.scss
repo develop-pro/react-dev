@@ -1,0 +1,86 @@
+@import "../base/variables";
+
+.funnest-container {
+    border-bottom: 1px solid #eee;
+    padding-bottom: 75px;
+    display: inline-block;
+
+    h2 {
+        font-size: 45.333333px;
+        text-align: center;
+        font-weight: bold;
+        margin: 75px 0 25px 0;
+    }
+
+    p {
+        text-align: center;
+        color: #636363;
+        font-size: 30.333333px;
+    }
+
+    .card-send-prank {
+        width: 480px;
+        height: 70px;
+        background: #237f11;
+        color: #fff;
+        font-size: 32px;
+        text-align: center;
+        display: block;
+        border-color: #237f11;
+
+        &:hover,
+        &:clicked,
+        &:focus,
+        &:active {
+            border-color: #237f11 !important;
+        }
+    }
+
+    .carousel {
+        height: 477px;
+    }
+
+    .btn-check-out {
+        color: #1ab1af;
+        font-size: 30.333333px;
+        border: none;
+        display: block;
+        margin: 0 auto;
+    }
+}
+
+// Small devices (landscape phones, 576px and up)
+@media (min-width: 576px) and (max-width: 767px) {
+    .funnest-container {
+        .carousel {
+            width: 576px !important;
+        }
+    }
+}
+
+// Medium devices (tablets, 768px and up)
+@media (min-width: 768px) and (max-width: 991px) {
+    .funnest-container {
+        .carousel {
+            width: 768px !important;
+        }
+    }
+}
+
+// Large devices (desktops, 992px and up)
+@media (min-width: 992px) and (max-width: 1199px) {
+    .funnest-container {
+        .carousel {
+            width: 992px !important;
+        }
+    }
+}
+
+// Extra large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) {
+    .funnest-container {
+        .carousel {
+            width: $page-width !important;
+        }
+    }
+}

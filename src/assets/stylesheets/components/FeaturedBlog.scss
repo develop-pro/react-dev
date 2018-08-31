@@ -1,0 +1,107 @@
+.featured-blog-container {
+    border-bottom: 1px solid #eee;
+    border-top: 1px solid #eee;
+    padding-bottom: 75px;
+
+    h2 {
+        font-size: 57.333333333333336px;
+        text-align: center;
+        font-weight: bold;
+        margin: 75px 0 25px 0;
+    }
+
+    .card {
+        width: 48%;
+        float: left;
+        height: 600px;
+        margin-right: 46px;
+        margin-bottom: 20px;
+
+        .card-title {
+            color: #282828;
+            font-size: 30.666666666666668px;
+        }
+
+        .card-text.date {
+            border-right: 1px solid #e5e5e5;
+            padding-right: 19px;
+            display: inline-block;
+
+            .fa-calendar {
+                color: #2fdbd9;
+                width: 25px;
+            }
+
+            img {
+                margin-top: -9px;
+                margin-right: 5px;
+            }
+
+            .text-muted {
+                font-size: 20px;
+                color: #2fdbd9 !important;
+            }
+        }
+
+        .card-text.description {
+            font-size: 21.333333333333332px;
+            color: #636363;
+        }
+    }
+
+    .btn-view-more {
+        width: 186px;
+        height: 68px;
+        background: #ffa500;
+        color: #fff;
+        font-size: 29.333333333333332px;
+        padding: 16px 12px;
+    }
+}
+
+// Small devices (landscape phones, 576px and up)
+@media (min-width: 576px) and (max-width: 767px) {
+    .featured-blog-container {
+        .card {
+            width: 100%;
+            margin-right: 0px;
+        }
+    }
+}
+
+// Medium devices (tablets, 768px and up)
+@media (min-width: 768px) and (max-width: 991px) {
+    .featured-blog-container {
+        .card {
+            margin-right: 30px;
+
+            &:nth-child(2n+2) {
+                margin-right: 0;
+            }
+        }
+    }
+}
+
+// Large devices (desktops, 992px and up)
+@media (min-width: 992px) and (max-width: 1199px) {
+    .featured-blog-container {
+        .card {
+            margin-right: 38px;
+
+            &:nth-child(2n+2) {
+                margin-right: 0;
+            }
+        }
+    }
+}
+
+// Extra large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) {
+    .featured-blog-container {
+        .card {
+            &:nth-child(2n+2) {
+                margin-right: 0;
+            }
+        }
+    }
+}

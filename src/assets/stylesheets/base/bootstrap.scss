@@ -1,0 +1,12 @@
+@import "../base/variables";
+
+
+
+@import "node_modules/bootstrap/scss/bootstrap";
+
+
+// Bootstrap extend
+
+.font-weight-extrabold { font-weight: $font-weight-extrabold !important; }
+
+h3, .h3, h4, .h4, h5, .h5, h6, .h6 { font-weight: 400; }

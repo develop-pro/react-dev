@@ -1,0 +1,550 @@
+@import "../base/variables";
+
+.home-container {
+    #banner2 {
+        position: relative;
+        padding: 75px 0;
+        border-bottom: 1px solid #e5e5e5;
+
+        img#header-banner2 {
+            width: $page-width;
+        }
+
+        a#apple-store-btn {
+            position: absolute;
+            left: 530px;
+            top: 284px;
+
+            img {
+                width: 266px;
+            }
+        }
+
+        a#google-play-btn {
+            position: absolute;
+            left: 814px;
+            top: 284px;
+
+            img {
+                width: 266px;
+            }
+        }
+    }
+
+    .request-a-prank-call {
+        background: url('../../images/request-a-prank-call.png');
+        width: $page-width;
+        height: 380px;
+        margin: 75px 0;
+
+        h2 {
+            padding-top: 49px;
+            color: #282828;
+            font-weight: normal;
+            font-size: 57.333333333333336px;
+            text-align: center;
+        }
+
+        p {
+            padding: 0 82px;
+            color: #282828;
+            font-size: 25px;
+        }
+
+        .btn-submit-request {
+            width: 318px;
+            height: 72px;
+            background: #ffa500;
+            color: #fff;
+            font-size: 29.333333333333332px;
+            padding: 16px 12px;
+            border: none;
+        }
+    }
+
+    .brand-section {
+        background: #f6f6f6;
+        position: relative;
+
+        p {
+            color: #636363;
+            text-align: center;
+            font-size: 24.666667px;
+            padding-top: 38px;
+        }
+
+        img {
+            margin-left: 53px;
+            margin-bottom: 20px;
+        }
+
+        &::before {
+            content: '';
+            position: absolute;
+            left: 0;
+            top: 39%;
+            background: url('../../images/left-arrow.png');
+            width: 49px;
+            height: 49px;
+        }
+
+        &::after {
+            content: '';
+            position: absolute;
+            right: 0;
+            top: 39%;
+            background: url('../../images/right-arrow.png');
+            width: 49px;
+            height: 49px;
+        }
+    }
+
+    .subscribe-section {
+        position: relative;
+        background: #2fdbd9;
+        height: 481px;
+        z-index: 2;
+
+        &::before {
+            position: absolute;
+            content: '';
+            left: -113px;
+            top: -81px;
+            background: url('../../images/subscribe-logo.png');
+            width: 575px;
+            height: 650px;
+            z-index: 3;
+        }
+
+        &::after {
+            position: absolute;
+            content: '';
+            border-radius: 50%;
+            width: 607px;
+            height: 607px;
+            left: -121px;
+            top: -84px;
+            background: #2fdbd9;
+            z-index: -30;
+        }
+
+        .subscribe-section__body {
+            padding-left: 488px;
+            padding-top: 94px;
+            z-index: 1;
+
+            h2 {
+                color: #fff;
+                font-size: 39.333333px;
+            }
+
+            p {
+                color: #fff;
+                font-size: 24.666667px;
+            }
+
+            .form-group {
+                position: relative;
+
+                .fa {
+                    position: absolute;
+                    left: 8px;
+                    top: 14px;
+                    color: #636363;
+                }
+            }
+
+            .email {
+                width: 61%;
+                height: 47px;
+                padding: 10px 20px 10px 30px;
+                float: left;
+
+                &::before {
+                    font-family: 'Font Awesome';
+                    content: "\f003";
+                    display: inline-block;
+                    padding-left: 6px;
+                    vertical-align: middle;
+                }
+            }
+
+            .btn-join {
+                height: 47px;
+                color: #fff;
+                width: 145px;
+                font-size: 20px;
+                float: left;
+                margin-left: 10px;
+            }
+
+            .num-block {
+                display: flex;
+                margin-top: 20px;
+
+                .each-char {
+                    position: relative;
+                    width: 54px;
+                    height: 64px;
+                    color: #fff;
+                    font-size: 40px;
+                    background: #24b7b5;
+                    margin-right: 10px;
+                    font-weight: bold;
+                    text-align: center;
+                    line-height: 78px;
+
+                    .comma {
+                        position: absolute;
+                        right: -10px;
+                        bottom: -20px;
+                        font-weight: bold;
+                        color: #fff;
+                        font-size: 40px;
+                        text-align: center;
+                    }
+                }
+
+                .description {
+                    margin-left: 10px;
+
+                    p {
+                        color: #fff;
+                        font-size: 22px;
+                        width: 320px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+// Small devices (landscape phones, 576px and up)
+@media (min-width: 576px) and (max-width: 767px) {
+    .home-container {
+        #banner2 {
+            img#header-banner2 {
+                width: 576px;
+            }
+        }
+
+        .request-a-prank-call {
+            width: 576px;
+
+            p {
+                font-size: 18px;
+            }
+        }
+
+        .subscribe-section {
+            padding: 51px 20px 0;
+            height: 778px;
+
+            &::before {
+                position: absolute;
+                content: '';
+                left: 100px;
+                top: 430px;
+                background: url('../../images/subscribe-logo.png');
+                width: 375px;
+                height: 422px;
+                background-size: 100%;
+                z-index: 3;
+            }
+
+            &::after {
+                position: absolute;
+                content: '';
+                border-radius: 50%;
+                width: 500px;
+                height: 500px;
+                left: 36px;
+                top: 327px;
+                background: #2fdbd9;
+                z-index: -30;
+            }
+
+            .subscribe-section__body {
+                padding: 0;
+                h2 {
+                    text-align: center;
+                }
+                .num-block {
+                    flex-wrap: wrap;
+
+                    .description {
+                        margin-top: 20px;
+                        margin-left: 0;
+                        p {
+                            width: auto;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+// Medium devices (tablets, 768px and up)
+@media (min-width: 768px) and (max-width: 991px) {
+    .home-container {
+        #banner2 {
+            img#header-banner2 {
+                width: 768px;
+            }
+
+            a#apple-store-btn {
+                position: absolute;
+                left: 339px !important;
+                top: 199px !important;
+                img {
+                    width: 126px !important;
+                }
+            }
+
+            a#google-play-btn {
+                position: absolute;
+                left: 479px !important;
+                top: 199px !important;
+                img {
+                    width: 126px !important;
+                }
+            }
+        }
+
+        .request-a-prank-call {
+            width: 768px;
+
+            p {
+                font-size: 20px;
+            }
+        }
+
+        .subscribe-section {
+            padding: 51px 20px 0;
+            height: 954px;
+
+            &::before {
+                position: absolute;
+                content: '';
+                left: 100px;
+                top: 424px;
+                background: url('../../images/subscribe-logo.png');
+                width: 575px;
+                height: 650px;
+                z-index: 3;
+            }
+
+            &::after {
+                position: absolute;
+                content: '';
+                border-radius: 50%;
+                width: 607px;
+                height: 607px;
+                left: 91px;
+                top: 414px;
+                background: #2fdbd9;
+                z-index: -30;
+            }
+
+            .subscribe-section__body {
+                padding: 0;
+
+                h2 {
+                    text-align: center;
+                }
+
+                .num-block {
+                    flex-wrap: wrap;
+
+                    .description {
+                        margin-top: 20px;
+                        margin-left: 0;
+
+                        p {
+                            width: auto;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+// Large devices (desktops, 992px and up)
+@media (min-width: 992px) and (max-width: 1199px) {
+    .home-container {
+        #banner2 {
+            img#header-banner2 {
+                width: 992px;
+            }
+
+            a#apple-store-btn {
+                position: absolute;
+                left: 437px !important;
+                top: 238px !important;
+                img {
+                    width: 166px !important;
+                }
+            }
+
+            a#google-play-btn {
+                position: absolute;
+                left: 627px !important;
+                top: 238px !important;
+                img {
+                    width: 166px !important;
+                }
+            }
+        }
+
+        .request-a-prank-call {
+            width: 992px;
+
+            p {
+                font-size: 22px;
+            }
+        }
+
+        .subscribe-section {
+            .subscribe-section__body{
+                .num-block {
+                    flex-wrap: wrap;
+
+                    .description {
+                        margin-top: 20px;
+                        margin-left: 0;
+
+                        p {
+                            width: auto;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+// Extra large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) {
+    .home-container {
+        #banner2 {
+            position: relative;
+            padding: 75px 0;
+            border-bottom: 1px solid #e5e5e5;
+
+            img#header-banner2 {
+                width: $page-width;
+            }
+
+            a#apple-store-btn {
+                position: absolute;
+                left: 530px !important;
+                top: 284px !important;
+
+                img {
+                    width: 266px !important;
+                }
+            }
+
+            a#google-play-btn {
+                position: absolute;
+                left: 814px !important;
+                top: 284px !important;
+
+                img {
+                    width: 266px !important;
+                }
+            }
+        }
+
+        .request-a-prank-call {
+            width: $page-width;
+        }
+
+        .subscribe-section {
+            position: relative;
+            background: #2fdbd9;
+            height: 481px;
+            z-index: 2;
+            .subscribe-section__body {
+                padding-left: 488px;
+                padding-top: 94px;
+                z-index: 1;
+                h2 {
+                    color: #fff;
+                    font-size: 39.333333px;
+                }
+                p {
+                    color: #fff;
+                    font-size: 24.666667px;
+                }
+                .form-group {
+                    position: relative;
+                    .fa {
+                        position: absolute;
+                        left: 8px;
+                        top: 14px;
+                        color: #636363;
+                    }
+                }
+                .email {
+                    width: 61%;
+                    height: 47px;
+                    padding: 10px 20px 10px 30px;
+                    float: left;
+                    &::before {
+                        font-family: 'Font Awesome';
+                        content: "\f003";
+                        display: inline-block;
+                        padding-left: 6px;
+                        vertical-align: middle;
+                    }
+                }
+                .btn-join {
+                    height: 47px;
+                    color: #fff;
+                    width: 145px;
+                    font-size: 20px;
+                    float: left;
+                    margin-left: 10px;
+                }
+                .num-block {
+                    display: flex;
+                    margin-top: 20px;
+
+                    .each-char {
+                        position: relative;
+                        width: 54px;
+                        height: 64px;
+                        color: #fff;
+                        font-size: 40px;
+                        background: #24b7b5;
+                        margin-right: 10px;
+                        font-weight: bold;
+                        text-align: center;
+                        line-height: 78px;
+                        .comma {
+                            position: absolute;
+                            right: -10px;
+                            bottom: -20px;
+                            font-weight: bold;
+                            color: #fff;
+                            font-size: 40px;
+                            text-align: center;
+                        }
+                    }
+                    .description {
+                        margin-left: 10px;
+                        p {
+                            color: #fff;
+                            font-size: 22px;
+                            width: 320px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
